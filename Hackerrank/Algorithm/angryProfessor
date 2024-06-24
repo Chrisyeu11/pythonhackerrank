@@ -1,0 +1,9 @@
+def angryProfessor(k, a):
+    # Count the number of students who arrived on time (i.e., time <= 0)
+    on_time_students = sum(1 for time in a if time <= 0)
+    
+    # Check if the number of on-time students is less than the threshold k
+    if on_time_students >= k:
+        return "NO"
+    else:
+        return "YES"
